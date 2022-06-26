@@ -102,15 +102,8 @@
 <div class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="text">
 <input type="text" name="text" placeholder="الأسم" data-form-field="text" class="form-control display-7" value="" id="text-form2-y">
 </div>   
-    <script>
-
-function MyF(){ var url = new URL(window.location.href);
-//const $select = document.querySelector('#select-form2-y');
-//var c = url.searchParams.get("c");
-//$select.value = url.searchParams.get("c");   
-  document.querySelector('#select-form2-y').value = url.searchParams.get("c");
-}
-
+<script>
+function MyF(){ var url = new URL(window.location.href);document.querySelector('#select-form2-y').value = url.searchParams.get("c");}
 </script>
 
 <div class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="select"> 
