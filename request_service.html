@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="assets/animatecss/animate.css">
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/recaptcha.css">
   <link href="assets/fonts/style.css" rel="stylesheet">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
@@ -26,7 +27,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   
 </head>
-<body  onload="MyF()" >
+<body  onload="MyF()">
   
   <section data-bs-version="5.1" class="menu menu1 studiom4_menu1 cid-sV358Y64e2" once="menu" id="menu1-t">
 	
@@ -92,7 +93,7 @@
                             <div class="line1"></div>
                             <div class="mbr-form top" data-form-type="formoid">
 <!--Formbuilder Form-->
-<form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="5wC18hdHqEuOXxFRW18xlQ33MWXoATPq++eI/DwM7xpdPxMtbIfhwyeFV05XA5Cij6/NYvED75moNq8xVdfD6BKcsfhl30htGRidbD14VXB3P9xrCYTVsTmVvEzTKXYO.6OiHa7b7IYSfUJvPJCNfVvvsXLFsCP1yk7tw03FUXr2wOwVRoiyKUw7W5vYY4fXCRApSYEW1jyuLjquj0wXw/ONlNJqqpmqpgEfO1WjWIPGqDcBoIslHs9N5/TzMWiIr">
+<form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="EaC7OrENLF2EeD53uICeew8pdb5idoJLA16C7KcqDa2+YO9RfKHlk1Qjq+vqRQ+Fc90dKPqbFs5mLT68G7quN8vVJYurPaoGX+CtV7Qko9ZbI3YKkX4T7u/pO74K9A02.6stNAA4yc9ujkaaSO3ECTbh8BCGt/xawxheQnIH8HC95VJ8nsKFuWTuf4Z8FIfmrDzZvOM4kl9G/oqX0YcZSz2/9hkGpUYiCzQYnZPLo6JE8K+0IP1OsrXqltaWORfgt">
 <div class="form-row">
 <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">شكراً سوف يتم التواصل معك</div>
 <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12"> Oops...! some problem!</div>
@@ -103,14 +104,16 @@
 </div>   
     <script>
 
-function MyF()  {
-const $select = document.querySelector('#select-form2-y');
-var url = new URL(window.location.href);
-var c = url.searchParams.get("c");
-$select.value = c;  }
+function MyF(){ var url = new URL(window.location.href);
+//const $select = document.querySelector('#select-form2-y');
+//var c = url.searchParams.get("c");
+//$select.value = url.searchParams.get("c");   
+  document.querySelector('#select-form2-y').value = url.searchParams.get("c");
+}
+
 </script>
 
-<div onload="MyF()" class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="select"> 
+<div class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="select"> 
 <select id="select-form2-y" name="select" data-form-field="select" class="form-control form-select display-7">
 
 <option value="الخدمة">الخدمة</option>
@@ -133,7 +136,9 @@ $select.value = c;  }
 <option value="قرارت ذرعة">قرارت ذرعة</option>
 <option value="حساب كميات">حساب كميات</option>
 <option value="خارطة كنتورية">خارطة كنتورية</option>
-    
+<option value="التخطيط العمراني">التخطيط العمراني</option>
+<option value="اعمال مساحية شاملة">اعمال مساحية شاملة</option>
+<option value="فرز الوحدات العقارية">فرز الوحدات العقارية</option>
 </select>
 </div>
 <div data-for="phone" class="col-lg-12 col-md-12 col-sm-12 form-group">
@@ -173,7 +178,7 @@ $select.value = c;  }
   <script src="assets/dropdown/js/navbar-dropdown.js"></script>
   <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
   <script src="assets/theme/js/script.js"></script>
-  <script src="assets/formoid/formoid.min.js"></script>
+  <script src="assets/formoid.min.js"></script>
   
   <script src="assets/ctrl.js"></script>
   
