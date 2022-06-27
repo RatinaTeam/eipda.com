@@ -26,8 +26,9 @@
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   
+
 </head>
-<body  onload="MyF()">
+<body>
   
   <section data-bs-version="5.1" class="menu menu1 studiom4_menu1 cid-sV358Y64e2" once="menu" id="menu1-t">
 	
@@ -93,7 +94,7 @@
                             <div class="line1"></div>
                             <div class="mbr-form top" data-form-type="formoid">
 <!--Formbuilder Form-->
-<form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="EaC7OrENLF2EeD53uICeew8pdb5idoJLA16C7KcqDa2+YO9RfKHlk1Qjq+vqRQ+Fc90dKPqbFs5mLT68G7quN8vVJYurPaoGX+CtV7Qko9ZbI3YKkX4T7u/pO74K9A02.6stNAA4yc9ujkaaSO3ECTbh8BCGt/xawxheQnIH8HC95VJ8nsKFuWTuf4Z8FIfmrDzZvOM4kl9G/oqX0YcZSz2/9hkGpUYiCzQYnZPLo6JE8K+0IP1OsrXqltaWORfgt">
+<form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="0hIfIapyRcmYo6adwus6bhEd3fL49rFpl08XE77rOua3lZ/uJiDk7BehDTKvF8pWPVi3Kb2IYmOz8JEagoS7d1mXQR4q4FBFGnyTNSeuNomstbVGXoYLXNhiYb6bgWom.iVhdct1/lIfsuNUKgW7oOheVZ2aqH7MZK91FwCTtAtLGyfb+EZP69MpQw64yFawl3trctHdaMe5MD813bwaFUR4HAqwto0uRpTqZxiJEgx0LmfvwEN/RfpnabMqNwYdR">
 <div class="form-row">
 <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">شكراً سوف يتم التواصل معك</div>
 <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12"> Oops...! some problem!</div>
@@ -102,11 +103,18 @@
 <div class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="text">
 <input type="text" name="text" placeholder="الأسم" data-form-field="text" class="form-control display-7" value="" id="text-form2-y">
 </div>   
-<script>
-function MyF(){ var url = new URL(window.location.href);document.querySelector('#select-form2-y').value = url.searchParams.get("c");}
+    <script>
+
+function MyF(){ var url = new URL(window.location.href);
+//const $select = document.querySelector('#select-form2-y');
+//var c = url.searchParams.get("c");
+//$select.value = url.searchParams.get("c");   
+  document.querySelector('#select-form2-y').value = url.searchParams.get("c");
+}
+
 </script>
 
-<div class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="select"> 
+<div onload="MyF()" class="col-lg-12 col-md-12 col-sm-12 form-group" data-for="select"> 
 <select id="select-form2-y" name="select" data-form-field="select" class="form-control form-select display-7">
 
 <option value="الخدمة">الخدمة</option>
@@ -123,7 +131,7 @@ function MyF(){ var url = new URL(window.location.href);document.querySelector('
 <option value="تحديث صكوك">تحديث صكوك</option> 
 <option value="تصحيح وضع">تصحيح وضع</option>
 <option value="منصة إحكام">منصة إحكام</option>
-<option value="اعمال مساحيه شاملة">اعمال مساحيه شاملة</option>
+<option value="حصر كميات">حصر كميات</option>
 <option value="شهادة اتمام بناء">شهادة اتمام بناء</option>
 <option value="حصر مخالفات البناء">حصر مخالفات البناء</option>
 <option value="قرارت ذرعة">قرارت ذرعة</option>
@@ -176,5 +184,6 @@ function MyF(){ var url = new URL(window.location.href);document.querySelector('
   <script src="assets/ctrl.js"></script>
   
   <input name="animation" type="hidden">
-  </body>
+  
+</body>
 </html>
