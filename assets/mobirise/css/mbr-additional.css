@@ -1966,6 +1966,10 @@ form .row [class*=col]{padding-left:0.6rem;padding-right:0.6rem}form .mbr-sectio
   margin-bottom: 30px;
   padding: 8px 26px;
 }
+.cid-sV35qHbXOH textarea,
+.cid-sV35qHbXOH input {
+  color: black !important;
+}
 .cid-sV35qHbXOH textarea {
   border-style: solid !important;
   border-width: 1px !important;
